@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.PbMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:text="@string/titlepart1"
+                style="@style/styletitre2"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:text="@string/titlepart2"
+                android:textColor="@color/colorfonttitremenu"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/titlepart3"
+                style="@style/styletitre2"
+                android:textAlignment="center"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/head_info"
+            style="@style/styletitre1"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:contentDescription="Logiciel"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_3d_printer"
+                    android:onClick="btnSoftware" />
+
+                <TextView
+                    android:contentDescription="Logiciel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_info_logiciel"
+                    android:textSize="18sp"
+                    style="@style/styletitre1"
+                    android:textAlignment="center"
+                    android:onClick="btnSoftware" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:contentDescription="@string/btn_info_connexion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_account"
+                    android:onClick="btnPbConnexion" />
+
+                <TextView
+                    android:contentDescription="@string/btn_info_connexion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_info_connexion"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    style="@style/styletitre1"
+                    android:onClick="btnPbConnexion" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:contentDescription="@string/btn_info_materiel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_computer2"
+                    android:onClick="btnMachine" />
+
+                <TextView
+                    android:contentDescription="@string/btn_info_materiel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_info_materiel"
+                    android:textSize="18sp"
+                    style="@style/styletitre1"
+                    android:textAlignment="center"
+                    android:onClick="btnMachine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:contentDescription="Autre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_letter_a"
+                    android:onClick="btnAutres" />
+
+                <TextView
+                    android:contentDescription="Autre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autre"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    style="@style/styletitre1"
+                    android:onClick="btnAutres" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:contentDescription="Déclaration rapide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_qr_codes_red"
+                    android:onClick="btnDeclaration" />
+
+                <TextView
+                    android:contentDescription="Déclaration rapide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_declaration_rapide"
+                    android:textSize="18sp"
+                    style="@style/styletitre1"
+                    android:textAlignment="center"
+                    android:onClick="btnDeclaration" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/ic_circle_backgroundfsi"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/call"
+                    android:onClick="btnAppel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_service_info"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#187A9F"
+                    android:onClick="btnAppel" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/apropos"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/nomaproposlien"
+                android:textAlignment="center"
+                android:onClick="btnapropos"
+                android:textColor="#000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/apropos"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="3dp"
+                    app:srcCompat="@drawable/neocampus_logo"
+                    android:onClick="btnapropos" />
+
+                <ImageView
+                    android:id="@+id/logoups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    app:srcCompat="@drawable/upslogo"
+                    android:onClick="btnapropos" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

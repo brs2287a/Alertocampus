@@ -1,0 +1,12 @@
+courte : 
+En cas d’incidents, alertez votre campus en moins d’une minute !
+
+In case of incidents, warn your campus in less than a minute!
+
+
+longue :
+Que ce soit pour un problème informatique (écran cassé, problème de connexion, erreur dans un logiciel) ou un problème lié aux installations, alertOCampus vous permet d’avertir le service compétent en moins d’une minute ! 
+Cette application a été développée dans le cadre de l’opération néOCampus de l’université Paul Sabatier et soutenu par la division informatique de la faculté de sciences et d’ingénierie.
+
+Either it is a data processing issue (broken screen, connection issue, software error) or a problem   linked to the facilities, alertOCampus allows you to warn the competent service in less than a minute!
+This application was developed in the frame of the néOCampus operation of the Paul Sabatier's University and supported by the processing division of the faculty of sciences and engineering.

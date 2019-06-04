@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.ThankActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:text="@string/titlepart1"
+                style="@style/styletitre2"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:text="@string/titlepart2"
+                android:textColor="@color/colorfonttitremenu"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/titlepart3"
+                style="@style/styletitre2"
+                android:textAlignment="center"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageThank"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_alignStart="@+id/imageThank"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_checked" />
+
+
+        <TextView
+            android:id="@+id/textViewRemerciements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/remerciements"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/thank_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/signature_remerciements"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/buttonThank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/buttonstyle"
+                android:onClick="btnAcceuil"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Déclarer un autre\n incident" />
+
+            <Button
+                android:id="@+id/buttonThankQuitter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/buttonstyle"
+                android:onClick="btnQuitter"
+                android:text="Fermer l'application" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/apropos"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/nomaproposlien"
+                android:textAlignment="center"
+                android:onClick="btnapropos"
+                android:textColor="#000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/apropos"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="3dp"
+                    app:srcCompat="@drawable/neocampus_logo"
+                    android:onClick="btnapropos" />
+
+                <ImageView
+                    android:id="@+id/logoups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    app:srcCompat="@drawable/upslogo"
+                    android:onClick="btnapropos" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

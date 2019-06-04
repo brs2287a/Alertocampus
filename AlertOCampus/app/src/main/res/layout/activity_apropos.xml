@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.AProposActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/styletitre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/titlepart1"
+                android:textAlignment="center"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/titlepart2"
+                android:textAlignment="center"
+                android:textColor="@color/colorfonttitremenu"
+                android:textSize="45sp" />
+
+            <TextView
+                style="@style/styletitre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/titlepart3"
+                android:textAlignment="center"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/resumeappli"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/styletitre1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/titredeveloppeur"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/developpeur"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/styletitre1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/titreconception"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/Conception"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonsiteirit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnsite"
+            android:padding="15dp"
+            android:text="@string/lienneocampus" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="3dp"
+            android:adjustViewBounds="true"
+            android:onClick="btnFSI"
+            app:srcCompat="@drawable/logo_fsi" />
+
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="3dp"
+            android:adjustViewBounds="true"
+            android:onClick="btnDI"
+            app:srcCompat="@drawable/logoddi" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/crediticone"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            style="@style/apropos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/nomaproposlien"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+
+            <LinearLayout
+                style="@style/apropos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/neocampus_logo" />
+
+                <ImageView
+                    android:id="@+id/logoups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/upslogo" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

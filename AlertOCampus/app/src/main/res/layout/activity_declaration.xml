@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.DeclarationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/formulaire_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textAlignment="center"
+                        android:text="@string/titlepart1"
+                        style="@style/styletitre2"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textAlignment="center"
+                        android:text="@string/titlepart2"
+                        android:textColor="@color/colorfonttitremenu"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/titlepart3"
+                        style="@style/styletitre2"
+                        android:textAlignment="center"
+                        android:textSize="45sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texte_formulaire_incident_connexion"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:autoLink="web"
+                    android:visibility="gone"
+                    android:id="@+id/layout_connexion" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/batiment_deux_points"
+                        android:layout_weight="2"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:id="@+id/formulaire_batimnent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salle_deux_points"
+                        android:layout_weight="2"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:id="@+id/formulaire_salle" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_declaration_rapide">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description_pb"
+                        android:id="@+id/texte_pb_connexion_description_incident"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:id="@+id/edittext_pb_connexion_description_incident"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/champs_obligatoires"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:id="@+id/texte_champs_obligatoires" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/photo_text"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/picture_taken" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:id="@+id/size_photo" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_photo"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_photo_camera"
+
+                            android:padding="12dp"
+                            android:background="@drawable/ic_circle_background"
+                            android:onClick="takePicture" />
+
+                        <TextView
+                            android:id="@+id/text_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prendre photo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:visibility="gone"
+                        android:id="@+id/deleteImg">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_multiply"
+                            android:padding="15dp"
+                            android:tint="#FF0000"
+                            android:background="@drawable/ic_circle_background"
+                            android:onClick="deletePicture" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Supprimer photo" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button_env"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/buttonstyle"
+                    android:text="@string/suivant"
+                    android:onClick="envoi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/apropos"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/nomaproposlien"
+                    android:textAlignment="center"
+                    android:onClick="btnapropos"
+                    android:textColor="#000" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/apropos"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="70dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/neocampus_logo"
+                        android:onClick="btnapropos" />
+
+                    <ImageView
+                        android:id="@+id/logoups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/upslogo"
+                        android:onClick="btnapropos" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/grey_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_formulaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

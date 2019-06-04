@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.FormulaireInformatiqueActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/formulaire_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textAlignment="center"
+                        android:text="@string/titlepart1"
+                        style="@style/styletitre2"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textAlignment="center"
+                        android:text="@string/titlepart2"
+                        android:textColor="@color/colorfonttitremenu"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/titlepart3"
+                        style="@style/styletitre2"
+                        android:textAlignment="center"
+                        android:textSize="45sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/head_rapide"
+                    android:visibility="gone"
+                    android:textSize="30sp"
+                    style="@style/styletitre1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:id="@+id/head_rapide" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texte_formulaire_incident_connexion"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:autoLink="web"
+                    android:visibility="gone"
+                    android:id="@+id/layout_connexion" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/lumiere"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_qr_codes"
+                            android:padding="10dp"
+                            android:onClick="scanner"
+                            android:background="@drawable/transparent_bg_bordered_button" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scanner_directement_la_machine"
+                            android:textAlignment="center"
+                            android:onClick="scanner" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fenetre"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:contentDescription="@string/desc_fenetre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_edit"
+                            android:layout_marginBottom="5dp"
+                            android:onClick="btnManuel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/saisie_manuelle"
+                            android:textAlignment="center"
+                            android:onClick="btnManuel" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/retour_scan"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:visibility="visible"
+                    android:text="yaya"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_manuel"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/batiment_deux_points"
+                            android:layout_weight="2"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:id="@+id/formulaire_batimnent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salle_deux_points"
+                            android:layout_weight="2"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:id="@+id/formulaire_salle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pbinfo_formulaire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/num_machine_deux_points"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:id="@+id/formulaire_machine" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_declaration_rapide"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:text="@string/selection_type" />
+
+                    <Spinner
+                        android:id="@+id/spinner_declaration_rapide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description_pb"
+                        android:id="@+id/texte_pb_connexion_description_incident"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:id="@+id/edittext_pb_connexion_description_incident"
+                        android:inputType="textMultiLine"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_fin_formulaire"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/champs_obligatoires"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:id="@+id/texte_champs_obligatoires" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photo_text"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/picture_taken" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/size_photo"
+                        android:layout_marginBottom="10dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/img_photo"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/ic_photo_camera"
+
+                                android:padding="12dp"
+                                android:background="@drawable/ic_circle_background"
+                                android:onClick="takePicture" />
+
+                            <TextView
+                                android:id="@+id/text_photo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Prendre photo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:visibility="gone"
+                            android:id="@+id/deleteImg">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                app:srcCompat="@drawable/ic_multiply"
+                                android:padding="15dp"
+                                android:tint="#FF0000"
+                                android:background="@drawable/ic_circle_background"
+                                android:onClick="deletePicture" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Supprimer photo" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button_env"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/buttonstyle"
+                        android:text="@string/envoie_ticket"
+                        android:layout_marginBottom="20dp"
+                        android:onClick="envoi" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/apropos"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/nomaproposlien"
+                    android:textAlignment="center"
+                    android:onClick="btnapropos"
+                    android:textColor="#000" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/apropos"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="70dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/neocampus_logo"
+                        android:onClick="btnapropos" />
+
+                    <ImageView
+                        android:id="@+id/logoups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/upslogo"
+                        android:onClick="btnapropos" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/grey_layout_formulaire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_formulaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

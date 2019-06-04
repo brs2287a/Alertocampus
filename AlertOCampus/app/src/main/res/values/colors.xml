@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C28109</color>
+    <color name="colorPrimaryDark">#C28109</color>
+    <color name="colorAccent">#DE850D</color>
+    <color name="colorapropos">#DEC795</color>
+    <color name="colorbackgroundapp">#FFF</color>
+    <color name="colorfonttitremenu">#C6840D</color>
+    <color name="colorgrisbouton">#BDBDBD</color>
+    <color name="coloralertocampus">#5B5155</color>
+    <color name="colortexte">#000</color>
+</resources>
+

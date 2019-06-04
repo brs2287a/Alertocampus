@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.EchecActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:text="@string/titlepart1"
+                    style="@style/styletitre2"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:text="@string/titlepart2"
+                    android:textColor="@color/colorfonttitremenu"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/titlepart3"
+                    style="@style/styletitre2"
+                    android:textAlignment="center"
+                    android:textSize="45sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageEchec"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+
+                app:srcCompat="@drawable/ic_cancel" />
+
+            <TextView
+                android:id="@+id/textViewEchec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="@string/echecEnvoi"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewEchecMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                style="@style/styletitre1"
+                android:text="@string/mail_main"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutPbMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/mail_univ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/texte_fin_mail"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/buttonReesayer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/buttonstyle"
+                android:onClick="btnRéessayer"
+                android:text="Réessayer envoi"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonEchec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="btnAcceuil"
+                    android:text="@string/retour_accueil" />
+
+                <Button
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/buttonThankQuitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="btnQuitter"
+                    android:text="Fermer l'application" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/apropos"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/nomaproposlien"
+                    android:textAlignment="center"
+                    android:onClick="btnapropos"
+                    android:textColor="#000" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/apropos"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="70dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/neocampus_logo"
+                        android:onClick="btnapropos" />
+
+                    <ImageView
+                        android:id="@+id/logoups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@drawable/upslogo"
+                        android:onClick="btnapropos" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/grey_layout_formulaire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_formulaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

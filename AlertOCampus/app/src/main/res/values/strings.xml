@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">alertOCampus</string>
+    <string name="titlepart1">alert</string>
+    <string name="titlepart2">OC</string>
+    <string name="titlepart3">ampus</string>
+    <string name="crediticone">Icons made by : "https://www.flaticon.com/authors/twitter" \n from "www.flaticon.com"  is licensed by "http://creativecommons.org/licenses/by/3.0/" </string>
+    <string name="remerciements">Merci d\'avoir utilisé notre application pour déclarer cet incident.\nVotre demande va générer un ticket via le guichet numérique de l\'Université.\n Vous recevrez une confirmation par mail pour l\'ouverture puis sur le suivi de cet incident.</string>
+    <string name="remerciementsNotInfo">Merci d\'avoir utilisé notre application pour déclarer cet incident.</string>
+    <string name="signature_remerciements"><i>Le service informatique de la FSI</i></string>
+    <string name="echecEnvoi">Une erreur s\'est produite lors de l\'envoi de votre incident, veuillez réessayer ultérieurement</string>
+    <string name="resumeappli">Cette application a été développée dans le cadre de l\'opération neOCampus de l\'université Paul Sabatier de Toulouse.</string>
+    <string name="titredeveloppeur">Développement</string>
+    <string name="developpeur">Dorian AZEMA \n Kevin BARBARAT \n Esteban BRAVO  \n Emeric  DELACROIX </string>
+    <string name="titreconception">Conception</string>
+    <string name="Conception">Georges DA COSTA \n Philippe SABY \n Philippe LACASSAGNE\n Jeremy BOES \n Marie-Pierre GLEIZES \n Fanny LAMOTE \n Alexandre PERLES</string>
+    <string name="lienneocampus">https://www.irit.fr/neocampus</string>
+    <string name="titreautre">Autre incident</string>
+    <string name="texteautre">Pour les autres demandes concerant le patrimoine : détagage, nettoyage, déchets, dépannage,… \n
+                veuillez contacter votre correspondant GPL (Guichet Patirmoine et Logistique). \n
+                Cliquez sur le bouton suivant pour accéder à la liste des correspondants GPL\n
+        (Attention, il faut s\'identifier pour accéder à l\'intranet).</string>
+    <string name="titreboutonautre">Liste des correspondants GPL</string>
+    <string name="title_activity_apropos">APropos</string>
+    <string name="nomaproposlien">A propos</string>
+    <string name="texteCheckboxMain">Mémoriser mes identifiants</string>
+    <string name="propProtocol">mail.transport.protocol</string>
+    <string name="propHost">mail.smtp.host</string>
+    <string name="propUser">mail.smtp.user</string>
+    <string name="protocolName">smtps</string>
+    <string name="propPort">mail.smtp.port</string>
+    <string name="trueString">true</string>
+    <string name="propAut">mail.smtp.auth</string>
+    <string name="propStarttls">mail.smtp.starttls.enable</string>
+    <string name="batiment">Bâtiment</string>
+    <string name="etage">Etage</string>
+    <string name="num_salle">Numéro de salle</string>
+    <string name="email_etoile">Mon email*</string>
+    <string name="info_sup">Informations supplémentaires</string>
+    <string name="suivant">Suivant</string>
+    <string name="retour_accueil">Retour Accueil</string>
+    <string name="scanner_directement_la_machine">Scanner directement la machine</string>
+    <string name="batiment_deux_points">Bâtiment* :</string>
+    <string name="salle_deux_points">Salle* :</string>
+    <string name="num_machine_deux_points">Numéro de la machine :</string>
+    <string name="envoie_ticket">Envoyer le ticket</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="login">Identifiant Scout</string>
+    <string name="hint_login">abc1234a</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="hint_mdp">******</string>
+    <string name="connexion">Connexion</string>
+    <string name="urgences">Poste de sécurité</string>
+    <string name="head_materiel">Incident Matériel</string>
+    <string name="composant_materiel">Sélectionnez le composant :</string>
+    <string name="manquant">Manquant</string>
+    <string name="defectueux">Défectueux</string>
+    <string name="autre">Autres</string>
+    <string name="incident_antre">Incident Autre</string>
+    <string name="scan_rapide">Vous pouvez dès à présent scanner le matériel défaillant</string>
+    <string name="scan_express">Vous n\'avez pas le temps ?  Scannez directement la machine défaillante :</string>
+    <string name="num_service_info">Service Informatique FSI</string>
+    <string name="btn_info">Informatique FSI</string>
+    <string name="btn_autre">Autres</string>
+    <string name="head_info_autre">Autres Incidents</string>
+    <string name="head_info">Informatique FSI</string>
+    <string name="btn_info_logiciel">Logiciel</string>
+    <string name="btn_info_connexion">Connexion</string>
+    <string name="btn_info_materiel">Matériel</string>
+    <string name="head_info_logiciel">Incident Logiciel</string>
+    <string name="head_connexion">Incident Connexion</string>
+    <string name="texte_connexion">Le compte utilisable pour se connecter dans les salles de TP informatique est identique à celui de l’université (moodle, intranet, SCOUT etc.). </string>
+    <string name="os">Système d\'exploitation* :</string>
+    <string name="windows">Windows</string>
+    <string name="linux">Linux</string>
+    <string name="nom_logiciel">Nom du logiciel* :</string>
+    <string name="description_pb">Description de l\'incident :</string>
+    <string name="description_pb_connexion">Description de l\'incident :*</string>
+    <string name="solution_autre_materiel">Veuillez nous indiquer la nature de votre problème* :</string>
+    <string name="solution_defectueux_materiel">Vérifiez que les câbles soient bien branchés</string>
+    <string name="photo_text">Ajouter une photo à l\'incident :</string>
+    <string name="toast_pb_save_picture">Probleme durant la sauvegarde de l\'image</string>
+    <string name="typeImg">image/jpeg</string>
+    <string name="encodage">UTF-8</string>
+    <string name="mail_main">Adresse mail universitaire</string>
+    <string name="texte_fin_mail">\@univ-tlse3.fr</string>
+    <string name="btn_declaration_rapide">Déclaration Rapide</string>
+    <string name="champs_obligatoires">Les champs indiqués par une * sont obligatoires</string>
+    <string name="texte_choix_os_pb">Connexion impossible sur </string>
+    <string name="les_deux">Les deux</string>
+    <string name="debut_corps_mail">alertOcampus\n</string>
+    <string name="texte_pb_connexion_liste_identifiants">Liste des identifiants (limitée à 20)*\nSéparez chaque identifiant par une virgule</string>
+    <string name="texte_formulaire_incident_connexion">Pour vous aider :\n
+ 1/ Catalogue des services numériques de université\n
+        Url : <a href="https://www.google.com/">http://services-numeriques.univ-tlse3.fr/catalogue-de-services-607020.kjsp</a>\n
+2/ Vous pouvez utiliser le compte local des machines : fsi.local\n 
+(mot de passe donné par votre enseignant).</string>
+    <string name="precedent">Précédent</string>
+    <string name="selection_type">Sélectionnez le type de problème* :</string>
+    <string name="selection_composant">Sélectionnez un composant</string>
+    <string name="selection_incident">Sélectionnez un incident</string>
+    <string name="propTimeout">mail.smtps.timeout</string>
+    <string name="propCoTimeout">mail.smtps.connectiontimeout</string>
+    <string name="pbMail">L\'email saisi lors de la connexion semble ne pas etre le bon, veuillez saisir à nouveau votre mail universitaire</string>
+    <string name="desc_fenetre">Fenêtre ouverte</string>
+    <string name="desc_lumiere">Lumière allumée</string>
+    <string name="desc_air">Fuite d\'air comprimé</string>
+    <string name="desc_eau">Fuite d\'eau</string>
+    <string name="saisie_manuelle">Saisir l\'emplacement de la machine manuellement</string>
+    <string name="head_rapide">Déclaration rapide</string>
+    <string name="avertissement_connexion"><b>Attention : vous devez utiliser votre adresse universitaire</b>\nExemple : prenom.nom@univ-tlse3.fr</string>
+
+    <string-array name="liste_pb_materiel">
+        <item>Unité Centrale</item>
+        <item>Ecran</item>
+        <item>Clavier</item>
+        <item>Souris</item>
+        <item>Câbles</item>
+    </string-array>
+
+    <string-array name="liste_pb_connexion">
+        <item>Problème avec mon identifiant</item>
+        <item>Problème avec un/des autre(s) identifiant(s)</item>
+        <item>Problème avec Windows</item>
+        <item>Problème avec Linux</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="liste_pb_autres_incidents">
+        <item>Problème avec répertoire personne</item>
+        <item>Problème avec répertoire partage</item>
+        <item>Impression</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="liste_declaration_rapide">
+        <item>Logiciel</item>
+        <item>Matériel</item>
+        <item>Connexion</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="serveurs">
+        <item>ut3</item>
+        <item>emac</item>
+        <item>enac</item>
+        <item>enit</item>
+        <item>ensfea</item>
+        <item>envt</item>
+        <item>inp</item>
+        <item>insa</item>
+        <item>inuc</item>
+        <item>isae</item>
+        <item>ut</item>
+        <item>ut1</item>
+        <item>ut2</item>
+        <item>enm</item>
+
+    </string-array>
+
+</resources>

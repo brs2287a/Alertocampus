@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.neocampus.alertocampus.activities.LocalisationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.osmdroid.views.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/map" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/centre"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_location_sign" />
+
+        <ImageView
+            android:id="@+id/centre"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_circle_plain_background" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/ic_gps_fixed_indicator"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:onClick="btnMyLocation"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/envoyer"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:background="@drawable/buttonstyle"
+            android:layout_marginBottom="30dp"
+            android:onClick="btnEnvoyer" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/grey_layout_formulaire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_formulaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
